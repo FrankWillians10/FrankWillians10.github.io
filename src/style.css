@@ -3,13 +3,13 @@
 }
 
 #app {
-  width: 100vw;
+  width: 100%;
   height: 100vh;
 }
 
 .cabecalho {
   height: 100px;
-  max-width: 100;
+  max-width: 100%;
   background-color: #6E0CD4;
   display: flex;
   justify-content: center;
@@ -37,7 +37,7 @@
   font-size: 1.5rem;
   font-family: 'IBM Plex Mono', monospace;
   text-align: center;
-  margin-top: 20px;
+  margin-top: 24px;
 }
 
 .informacoes {
@@ -51,7 +51,7 @@
 
 .informacoes-cidade, .informacoes-data, .informacoes-hora, .informacoes-clima {
   color: #ffffff;
-  font-size: 16px;
+  font-size: 20px;
 }
 
 .separador {
@@ -82,17 +82,17 @@
 
 .skills img {
  margin-top: 300px;
- margin-left: 120px;
+ margin-left: 150px;
 }
 
 .skills-list {
   height: 370px;
-  width: 690px;
+  width: 720px;
   background-color: #6E0CD4;
   align-self: center;
   display: flex;
   flex-direction: column;
-  align-items: center;
+  /* align-items: center; */
   justify-content: space-around;
 }
 
@@ -100,4 +100,71 @@
   color: #ffffff;
   font-size: 1.8rem;
   max-width: 600px;
+  margin-left: 35px;
+}
+
+.skills-list p::before {
+  content: " ";
+  height: 20px;
+  width: 20px;
+  background-color: #F5B326;
+  border-radius: 100%;
+  display: inline-block;
+  margin-right: 10px;
+}
+
+.slide {
+  height: 165px;
+  width: 100%;
+  background-color: #F8F6FA;
+  display: flex;
+  margin-top: 200px;
+  overflow: hidden;
+}
+
+.slide div {
+  height: 140px;
+  width: 140px;
+  margin: auto 45px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.hello-word {
+  height: 100px;
+  width: 100%;
+  background-color:#6E0CD4;
+}
+
+.hello-word p {
+  text-align: center;
+  line-height: 100px;
+  color: #ffffff;
+  font-size: 2rem;
+  font-weight: 600;
+}
+
+.footer {
+  height: 100px;
+  width: 100%;
+  background-color:#6E0CD4;
+  margin-top: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.footer-interno {
+  height: 100px;
+  width: 1050px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.footer p {
+  color:#ffffff;
+  font-size: 1.5rem;
+  font-weight: 600;
 }
