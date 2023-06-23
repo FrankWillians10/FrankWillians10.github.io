@@ -39,10 +39,10 @@ function climaTempo() {
 }
 
 climaTempo();
-console.log("Frank Willians");
+
 //==========================================================
 
-export function horaMes() {
+function horaMes() {
   const data = document.querySelector(".informacoes-data");
   const date = new Date();
   
