@@ -22,6 +22,10 @@
   display: flex;
 }
 
+.logo img {
+  border-radius: 4px;
+  max-width: 100%;
+}
 
 .logo{
   max-width: 290px;
@@ -30,6 +34,21 @@
   position: absolute;
   top: 46px;
   border-radius: 4px;
+}
+
+.logo:hover {
+  animation: 2s linear infinite pulse;
+}
+
+@keyframes pulse {
+
+  0% {
+    transform: scale(1);
+  } 50% {
+    transform: scale(1.1);
+  } 100% {
+    transform: scale(1);
+  }
 }
 
 .logo-nome, .logo-idade {
@@ -71,6 +90,21 @@
 .efeito-texto {
   color:#ffffff;
   font-size: 2rem;
+}
+
+.efeito-texto::after {
+  content: "|";
+  animation: .8s linear infinite brilho;
+}
+
+@keyframes brilho {
+  0% {
+    color:#F5B326;
+  } 50% {
+    color: #6E0CD4;
+  } 100% {
+    color: #F5B326;
+  }
 }
 
 .skills {

@@ -70,16 +70,15 @@ pegaApi();
 
 //======================================================================================================================//
 
-// let frontEnd = document.querySelector(".efeito-texto")!;
-// let k = frontEnd.innerHTML;
-// let n = k.split("");
+let frontEnd = document.querySelector(".efeito-texto")!;
+let k = frontEnd.innerHTML;
+let n = k.split("");
 
-// frontEnd.innerHTML = "";
-// n.forEach((item, index) => {
+frontEnd.innerHTML = "";
+n.forEach((item, index) => {
 
-//   setTimeout(() => {
-//     frontEnd.innerHTML += item
-//     console.log(frontEnd.innerHTML += item)
-//   }, index);
-// });
+  setTimeout(() => {
+    frontEnd.innerHTML += item
+  }, index * 70);
+});
 
